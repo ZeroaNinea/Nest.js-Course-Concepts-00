@@ -7,5 +7,5 @@ async function bootstrap() {
 }
 
 bootstrap()
-  .then(() => console.log('Server started!'))
+  .then(() => console.log(' ✅ Server started!'))
   .catch(console.error);
