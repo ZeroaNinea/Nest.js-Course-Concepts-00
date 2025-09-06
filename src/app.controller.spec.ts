@@ -5,6 +5,7 @@ import { ConfigService } from '@nestjs/config';
 
 describe('AppController', () => {
   let appController: AppController;
+  const configService = new ConfigService();
 
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
@@ -17,7 +18,9 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+      expect(appController.getHello()).toBe(
+        `Hello, ${configService.get<string>('APP_NAME', 'defaultValue')}!`,
+      );
     });
   });
 });
