@@ -1,4 +1,4 @@
-import { Controller, Inject, Get, Param } from '@nestjs/common';
+import { Controller, Inject, Get, Param, Query } from '@nestjs/common';
 import { HelloService } from './hello.service';
 
 @Controller('hello')
@@ -17,5 +17,10 @@ export class HelloController {
   @Get('user/:name')
   getHelloWithName(@Param('name') name: string): string {
     return this.helloService.getHelloWithName(name);
+  }
+
+  @Get('query')
+  getHelloWithQuery(@Query('name') name: string): string {
+    return this.helloService.getHelloWithName(name || 'world');
   }
 }
