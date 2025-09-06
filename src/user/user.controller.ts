@@ -14,4 +14,9 @@ export class UserController {
   getUserById(@Param('id', ParseIntPipe) id: number) {
     return this.userService.getUserById(id);
   }
+
+  @Get(':id/welcome')
+  getWelcomeMessage(@Param('id', ParseIntPipe) id: number) {
+    return this.userService.getWelcomeMessage(id);
+  }
 }
