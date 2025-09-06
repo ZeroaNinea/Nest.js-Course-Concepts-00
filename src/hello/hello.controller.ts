@@ -13,4 +13,9 @@ export class HelloController {
   getHello(): string {
     return this.helloService.getHello();
   }
+
+  @Get('user/:name')
+  getHelloWithName(@Inject('name') name: string): string {
+    return this.helloService.getHelloWithName(name);
+  }
 }
