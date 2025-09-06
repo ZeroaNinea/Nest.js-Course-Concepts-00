@@ -17,6 +17,12 @@ npm install
 npm run start:dev
 ```
 
+## The .env File
+
+```env
+APP_NAME=Nest.js
+```
+
 ## Resources
 
 - **[Nest JS Full Course 2025 | Node JS Full Course | Part 4](https://www.youtube.com/watch?v=XVZ10uFY9DU&t=3109s)** created by Sangam Mukherjee
