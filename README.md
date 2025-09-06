@@ -3,14 +3,14 @@
 A personal repository for my Nest.js learning journey.  
 This part covers **Modules**, **Controllers**, **Services**, and using `@nestjs/config` for configuration.
 
-## What I learned
+## What I Learned
 
 - How to organize code with **Modules**.
 - Creating and using **Controllers** for routing.
 - Building **Services** for business logic.
 - Managing environment variables with `@nestjs/config`.
 
-## How to run
+## How to Run
 
 ```bash
 npm install
