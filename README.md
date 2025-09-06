@@ -20,4 +20,4 @@ npm run start:dev
 ## Resources
 
 - **[Nest JS Full Course 2025 | Node JS Full Course | Part 4](https://www.youtube.com/watch?v=XVZ10uFY9DU&t=3109s)** created by Sangam Mukherjee
-- **[NestJS documentation](https://docs.nestjs.com/).**
+- **[NestJS documentation](https://docs.nestjs.com/)**
