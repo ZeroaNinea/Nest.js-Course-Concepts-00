@@ -9,6 +9,7 @@ describe('HelloController', () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [HelloController],
       providers: [HelloService],
+      exports: [HelloService],
     }).compile();
 
     controller = module.get<HelloController>(HelloController);

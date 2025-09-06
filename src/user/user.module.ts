@@ -1,14 +1,11 @@
-import { Inject, Module } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { UserController } from './user.controller';
 import { UserService } from './user.service';
-import { HelloService } from 'src/hello/hello.service';
+import { HelloModule } from 'src/hello/hello.module';
 
 @Module({
   controllers: [UserController],
   providers: [UserService],
+  imports: [HelloModule],
 })
-export class UserModule {
-  constructor(
-    @Inject(HelloService) private readonly userService: HelloService,
-  ) {}
-}
+export class UserModule {}
