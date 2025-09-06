@@ -9,7 +9,7 @@ export class HelloController {
     @Inject(HelloService) private readonly helloService: HelloService,
   ) {}
 
-  @Get()
+  @Get('first-route')
   getHello(): string {
     return this.helloService.getHello();
   }
